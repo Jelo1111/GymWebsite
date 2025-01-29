@@ -1,0 +1,485 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cover {
+    background-image: url("./Images/contact-img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    height: 80vh;
+    width: auto;
+  }
+
+.dropdown .btn{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    transition: 1s;
+}
+
+.dropdown .btn i{
+    color: orangered;
+}
+
+.dropdown .btn:hover {
+    background-color: rgba(0, 0, 0, 0.884)
+}
+
+#navId .nav-link {
+    display: flex;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-bottom: none;
+}
+
+#navId .nav-link:hover{
+    background-color: orangered;
+}
+
+.logo{
+    margin: 5px;
+    height: 60px;
+    width: auto;
+}
+
+header{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.medias{
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.medias p{
+    font-size: 50px;
+    font-weight: 400;
+    padding: 20px;
+    margin: 10px;
+}
+
+.medias .reach-us{
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.medias #fb, #ig, #twitter{
+    padding: 2px;
+    margin: 50px;
+    color: hsla(0, 0%, 0%, 0.904);
+}
+
+.cover h2{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 70px;
+    font-weight: 400;
+    font-family: "Russo One" ,sans-serif;
+    font-weight: bolder;
+    background: linear-gradient(to right, #9b9696, #ff4400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text p{
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.contact-us .mail{
+    text-align: center;
+    text-transform: capitalize;
+    color: orangered;
+    font-size: 25px;
+    padding: 5x;
+
+}
+
+input[type="text"], [type="email"]{
+    margin: 5px;
+
+}
+
+textarea[name="message"]{
+    padding: 20px;
+    margin: 5px;
+    width: 100%;
+}
+
+input[name="first-name"], [name="last-name"], [name="Email"]{
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+
+}
+
+input[type="submit"]{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    width: 30%;
+    font-weight: 400;
+    float: right;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: orangered;
+    color: black;
+}
+
+::placeholder{
+    color: black;
+    font-size: 15px;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    margin-top: 10px;
+    background-color: hsl(12, 90%, 53%);
+}
+
+.footer-content{
+    display: flex;
+}
+
+.foot-nav{
+    margin: 10px;
+    margin-right: 20px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.foot-nav ul{
+    list-style: none;
+}
+
+.foot-nav .big-font{
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: hsl(0, 0%, 0%);
+    border-bottom: solid hsl(0, 0%, 0%);
+}
+
+.foot-nav ul li{
+    padding: 5px;
+}
+
+.navigation .foot-nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:  hsl(0, 0%, 0%);
+}
+
+.socials{
+    margin: 10px;
+    padding: 10px;
+}
+
+.socials .big-font{
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    color: hsl(0, 0%, 0%);
+    border-bottom: solid hsl(0, 0%, 0%);
+}
+
+.socials a i{
+    color: hsl(0, 0%, 0%);
+}
+
+.socials i{
+    padding: 5px;
+    margin: 5px;
+}
+
+.copyright{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.copyright img{
+    height: 150px;
+}
+
+.copyright p{
+    color: hsl(0, 0%, 0%);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 1024px) {
+    body{
+        flex-direction: column;
+    }
+
+    .cover {
+        background-image: url("./Images/contact-img2.jpg");
+        background-attachment: scroll;
+        height: 80vh;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+    .logo{
+        display: none;
+    }
+    
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+    }
+
+    .dropdown .btn{
+        background-color: rgb(0, 0, 0);
+        border: none;
+        transition: 1s;
+    }
+
+    .dropdown .btn i{
+        color: rgb(255, 94, 0);
+    }
+
+    .dropdown .btn:hover {
+        background-color: rgba(0, 0, 0, 0.884)
+    }
+
+    #navId .nav-link {
+        display: flex;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        border: none;
+        border-bottom: none;
+    }
+
+    #navId .nav-link:hover{
+        background-color: orangered;
+    }
+
+    .medias{
+        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .medias p{
+        font-size: 40px;
+        font-weight: 400;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .medias .reach-us{
+        font-size: 15px;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .medias #fb, #ig, #twitter{
+        padding: 2px;
+        margin: 20px;
+        color: hsla(0, 0%, 0%, 0.904);
+    }
+    
+    .text h2{
+        text-align: center;
+        margin-top: 15%;
+        font-size: 50px;
+        font-weight: 400;
+        font-family: "Russo One" ,sans-serif;
+        font-weight: bolder;
+        background: linear-gradient(to right, #9b9696, #ff4400);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .text p{
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+    
+    .forms{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form{
+        width: auto;
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    form span, .contact {
+        display: none;
+    }
+    
+    .contact-us .mail{
+        text-align: center;
+        text-transform: capitalize;
+        color: orangered;
+        font-size: 20px;
+        padding: 5x;
+    
+    }
+    
+    input[type="text"], [type="email"]{
+        margin: 5px;
+    
+    }
+    
+    textarea[name="message"]{
+        margin: 5px;
+        width: auto;
+    }
+    
+    input[name="first-name"], [name="last-name"], [name="Email"]{
+        width: auto;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+    
+    }
+    
+    input[type="submit"]{
+        border: none;
+        border-radius: 10px;
+        background: black;
+        color: white;
+        width: auto;
+        font-weight: 400;
+    }
+    
+    input[type="submit"]:hover{
+        cursor: pointer;
+        background: orangered;
+        color: black;
+    }
+    
+    ::placeholder{
+        color: black;
+        font-size: 15px;
+    }
+    
+    /*Footer*/
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        width: auto;
+        background-color: hsl(12, 90%, 53%);
+    }
+    
+    .footer-content{
+        display: flex;
+    }
+    
+    .foot-nav{
+        margin-right: 20px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+    
+    .foot-nav ul{
+        list-style: none;
+    }
+    
+    .foot-nav .big-font{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: hsl(0, 0%, 0%);
+        border-bottom: solid hsl(0, 0%, 0%);
+    }
+    
+    .foot-nav ul li{
+        padding: 5px;
+    }
+    
+    .navigation .foot-nav ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Roboto Condensed', sans-serif;
+        color:  hsl(0, 0%, 0%);
+    }
+    
+    .socials{
+        padding: 10px;
+        display: flex;
+    }
+    
+    .socials .big-font{
+        font-size: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 5px;
+        color: hsl(0, 0%, 0%);
+        border-bottom: solid hsl(0, 0%, 0%);
+    }
+    
+    .socials a i{
+        color: hsl(0, 0%, 0%);
+    }
+    
+    .socials i{
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .copyright{
+        display: none;  
+    }
+    
+    
+}

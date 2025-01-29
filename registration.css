@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-image: url(./Images/pic2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.forms form{
+    margin-right: 100px;
+    margin-top: 15%;
+    aspect-ratio: 1/1;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px 10px rgba(100, 100, 100, 0.288);
+ 
+}
+
+form h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 10%;
+    color: orangered;
+}
+
+form input[type="text"], [type="password"], [type="email"]{
+    padding: 15px;
+    padding-left: 35px;
+    margin: 5px;
+    margin-left: 15%;
+    border-radius: 20px;
+    width: 70%;
+}
+
+::placeholder{
+    font-size: 15px;
+    color: black;
+}
+
+form #user, #pass, #email{
+    margin-top: 15px;
+    margin-left: 83px;
+    padding: 5px;
+    position: absolute;
+}
+
+form input[type="submit"]{
+    padding: 6px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-left: 15%;
+    width: 70%;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+input[type="submit"]:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.forms form a{
+    margin: 15px;
+    padding: 10px 5px;
+    margin-left: 15%;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.forms .account{
+    margin-left: 15%;
+    color: orangered;
+}
+
+.forms .account a{
+    margin: 0;
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 1024px){
+    body{
+        display: flex;
+        align-items: center;
+        background-color: rgb(243, 241, 241);
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    form{
+        margin-top: 20%;
+        height: 100vh;
+        aspect-ratio: 1/1;
+    }
+    .forms{
+        height: 100vh;
+    }
+
+    .forms form{
+        box-shadow: none;
+        border-radius:none;
+        margin-right: 0px;
+    }
+
+    form h2{
+        display: block;
+        text-align: center;
+        font-size: 35px;
+        padding: 5px;
+        margin: 5px;
+        line-height: 40px;
+    }
+    form input[type="text"], [type="password"], [type="email"]{
+        padding-left: 35px;
+        border-radius: 0px;
+        border: none;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+
+}

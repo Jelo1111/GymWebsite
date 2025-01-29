@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cover {
+    background-image: url("./Images/pic3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+}
+
+.user-link a{
+    color: orangered;
+    text-decoration: none;
+}
+
+.user-link a:hover{
+    color: orangered;
+}
+
+.dropdown .btn{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    transition: 1s ease-out;
+}
+
+.dropdown .btn i{
+    color: rgb(255, 94, 0);
+}
+
+.dropdown .btn:hover {
+    background-color: rgba(0, 0, 0, 0.884)
+}
+
+#navId .nav-link {
+    display: flex;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-bottom: none;
+}
+
+#navId .nav-link:hover{
+    background-color: orangered;
+}
+
+.logo{
+    margin: 5px;
+    height: 60px;
+    width: auto;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.cover h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.developers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about{
+    margin-left: 28%;
+    margin-top: 5%;
+    padding: 5px;
+    right: 200px;
+    width: 300px;
+    height: 100px;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    background-color: hsla(0, 0%, 0%, 0.829);
+    transition: 1s;
+    text-decoration: none;
+}
+
+.contact{
+    margin-left: 9px;
+    margin-top: 5%;
+    padding: 5px;
+    right: 200px;
+    width: 300px;
+    height: 100px;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    background-color:hsla(0, 0%, 0%, 0.829);
+    transition: 1s;
+    text-decoration: none;
+}
+
+.about:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.contact:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.developers .about p{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    margin-top: 11%;
+    text-align: center;
+}
+
+.developers .contact p{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    margin-top: 11%;
+    text-align: center;
+}
+
+.try p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.started p{
+    text-align: center;
+    padding: 15px;
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 30%;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-bottom: 4px solid hsla(14, 100%, 48%, 0.932);
+}
+
+/*MAIN*/
+.significance{
+    margin: 5%;
+    padding: 10px;
+    display: flex;
+}
+
+.significance .why-workout{
+    height: 500px;
+    width: 50vw;
+}
+
+.significance .large-font{
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.significance p{
+    padding: 40px;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    margin-top: 5%;
+}
+
+.significance a{
+    display: flex;
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10%;
+    text-decoration: none;
+    color: white;
+    transition: 1s ease-in-out;
+    background-color: hsla(14, 100%, 48%, 0.932);
+}
+
+.significance a:hover{
+    background-color: hsla(14, 94%, 34%, 0.932);
+    transition: 1s ease-in-out;
+}
+
+.importance{
+    padding: 10px;
+    margin: 5%;
+    display: flex;
+}
+
+.importance .form{
+    height: 500px;
+    width: 50vw;
+}
+
+.importance .importance-form{
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.importance .importance-form p{
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    margin-top: 5%;
+}
+
+.importance .importance-form a{
+    display: flex;
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10%;
+    text-decoration: none;
+    color: white;
+    transition: 1s ease-in-out;
+    background-color: hsla(14, 100%, 48%, 0.932);
+}
+
+.importance .importance-form a:hover{
+    background-color: hsla(14, 94%, 34%, 0.932);
+    transition: 1s ease-in-out;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    background-color: hsl(12, 90%, 53%);
+}
+
+.footer-content{
+    display: flex;
+}
+
+.foot-nav{
+    margin: 10px;
+    margin-right: 20px;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.foot-nav ul{
+    list-style: none;
+}
+
+.foot-nav .big-font{
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: hsl(0, 0%, 0%);
+    border-bottom: solid hsl(0, 0%, 0%);
+}
+
+.foot-nav ul li{
+    padding: 5px;
+}
+
+.navigation .foot-nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:  hsl(0, 0%, 0%);
+}
+
+.socials{
+    margin: 10px;
+    padding: 10px;
+}
+
+.socials .big-font{
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    color: hsl(0, 0%, 0%);
+    border-bottom: solid hsl(0, 0%, 0%);
+}
+
+.socials a i{
+    color: hsl(0, 0%, 0%);
+}
+
+.socials i{
+    padding: 5px;
+    margin: 5px;
+}
+
+.copyright{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.copyright img{
+    height: 150px;
+}
+
+.copyright p{
+    color: hsl(0, 0%, 0%);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 1024px) {
+    body{
+        flex-direction: column;
+    }
+
+    .cover {
+        background-image: url("./Images/pic3.jpeg");
+        background-attachment: scroll;
+        height: 80vh;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+    }
+
+    .dropdown .btn{
+        background-color: rgb(0, 0, 0);
+        border: none;
+        transition: 1s;
+    }
+
+    .dropdown .btn i{
+        color: rgb(255, 94, 0);
+    }
+
+    .dropdown .btn:hover {
+        background-color: rgba(0, 0, 0, 0.884)
+    }
+
+    #navId .nav-link {
+        display: flex;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        border: none;
+        border-bottom: none;
+    }
+
+    #navId .nav-link:hover{
+        background-color: orangered;
+    }
+    
+    .cover h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 30%;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    
+    .developers{
+        flex-direction: column;
+    }
+    
+    .about{
+        margin-left: 2%;
+        margin-top: 5%;
+        padding: 5px;
+        right: 200px;
+        width: 300px;
+        height: 100px;
+        transform: none;
+        -webkit-transform: none;
+        background-color: hsla(0, 0%, 0%, 0.829);
+        transition: 1s;
+        text-decoration: none;
+    }
+    
+    .contact{
+        margin-left: 2%;
+        margin-top: 5%;
+        padding: 5px;
+        right: 200px;
+        width: 300px;
+        height: 100px;
+        transform: none;
+        -webkit-transform: none;
+        background-color:hsla(0, 0%, 0%, 0.829);
+        transition: 1s;
+        text-decoration: none;
+    }
+    
+    .about:hover{
+        transform: scaleX(1.1);
+        z-index: 1;
+    }
+    
+    .contact:hover{
+        transform: scaleX(1.1);
+        z-index: 1;
+    }
+    
+    .developers .about p{
+        font-size: 30px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #ffffff;
+        margin-top: 11%;
+        text-align: center;
+    }
+    
+    .developers .contact p{
+        font-size: 30px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #ffffff;
+        margin-top: 11%;
+        text-align: center;
+    }
+    
+    .try p{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5%;
+    }
+    
+    .started p{
+        text-align: center;
+        padding: 15px;
+        margin-top: 10%;
+        margin-left: 25%;
+        width: 50%;
+        font-size: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        border-bottom: 4px solid hsla(14, 100%, 48%, 0.932);
+    }
+    
+    /*MAIN*/
+    .significance{
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .significance .why-workout{
+        height: 300px;
+        width: 474px;
+    }
+    
+    .significance .large-font{
+        font-size: 35px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .significance p{
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: normal;
+        text-align: justify;
+    }
+    
+    .significance a{
+        display: flex;
+        float: left;
+        font-size: 15px;
+        padding: 10px;
+        margin-top: 25px;
+        text-decoration: none;
+        color: white;
+        transition: 1s ease-in-out;
+        background-color: hsla(14, 100%, 48%, 0.932);
+    }
+    
+    .significance a:hover{
+        background-color: hsla(14, 94%, 34%, 0.932);
+        transition: 1s ease-in-out;
+    }
+    
+    .importance{
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    
+    .importance .form{
+        height: 300px;
+        width: 473px;
+    }
+    
+    .importance .importance-form{
+        font-size: 35px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    .importance .importance-form p{
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: normal;
+        text-align: justify;
+    }
+    
+    .importance .importance-form a{
+        display: flex;
+        float: left;
+        font-size: 15px;
+        padding: 10px;
+        margin-top: 25px;
+        text-decoration: none;
+        color: white;
+        transition: 1s ease-in-out;
+        background-color: hsla(14, 100%, 48%, 0.932);
+    }
+    
+    .importance .importance-form a:hover{
+        background-color: hsla(14, 94%, 34%, 0.932);
+        transition: 1s ease-in-out;
+    }
+        
+    /*Footer*/
+    footer{
+       display: flex;
+        justify-content: space-evenly;
+        width: auto;
+        background-color: hsl(12, 90%, 53%);
+    }
+    
+    .footer-content{
+        display: flex;
+    }
+    
+    .foot-nav{
+        margin-right: 20px;
+        margin-left: 50px;
+       padding: 10px;
+    }
+    
+    .foot-nav ul{
+        list-style: none;
+    }
+    
+    .foot-nav .big-font{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: hsl(0, 0%, 0%);
+        border-bottom: solid hsl(0, 0%, 0%);
+    }
+    
+    .foot-nav ul li{
+        padding: 5px;
+    }
+    
+    .navigation .foot-nav ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'Roboto Condensed', sans-serif;
+        color:  hsl(0, 0%, 0%);
+    }
+    
+    .socials{
+        padding: 10px;
+        display: flex;
+    }
+    
+    .socials .big-font{
+        font-size: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 5px;
+        color: hsl(0, 0%, 0%);
+        border-bottom: solid hsl(0, 0%, 0%);
+    }
+    
+    .socials a i{
+        color: hsl(0, 0%, 0%);
+    }
+    
+    .socials i{
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .copyright{
+        display: none;  
+    }
+    
+   
+}
